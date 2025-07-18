@@ -7,15 +7,19 @@ This project demonstrates an AI agent that controls a real web browser through n
 
 ## 🗺️ High-Level Architecture
 
-```mermaid
-flowchart TD
-    User[User] -->|Chat| Frontend[React Chat UI]
-    Frontend -->|REST API| Backend[Flask + Selenium Backend]
-    Backend -->|Controls| Browser[Chrome/Edge (Selenium)]
-    Browser -->|Screenshots| Backend
-    Backend -->|Screenshots/Status| Frontend
-    Frontend -->|Displays| User
-```
+User
+  │
+  ▼
+React Chat UI (Frontend)
+  │  REST API
+  ▼
+Flask + Selenium Backend
+  │  (controls)
+  ▼
+Chrome/Edge Browser (Selenium)
+  │  (screenshots)
+  ▲
+Frontend (displays screenshots)
 
 ---
 
@@ -74,9 +78,8 @@ Below are sample screenshots from the browser automation flow (see the `screensh
 
 | Gmail Login | Compose | Fields Filled | Sent Confirmation |
 |-------------|---------|--------------|------------------|
-| ![Login](selenium_backend/screenshots/sample_login.png) | ![Compose](selenium_backend/screenshots/sample_compose.png) | ![Filled](selenium_backend/screenshots/sample_filled.png) | ![Sent](selenium_backend/screenshots/sample_sent.png) |
+| ![Login](selenium_backend/screenshots/sample_login.png) | ![Compose](selenium_backend/screenshots/sample_compose.png) | ![Filled](selenium_backend/screenshots/sample_filled.png) | ![Sent] |
 
-You can also record a GIF of the flow using a tool like ScreenToGif for demo purposes.
 
 ---
 
