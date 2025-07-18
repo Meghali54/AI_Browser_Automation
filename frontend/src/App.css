@@ -1,0 +1,122 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 24px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.chat-window {
+  min-height: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: #f7f7fa;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.user {
+  text-align: right;
+}
+
+.agent {
+  text-align: left;
+}
+
+.msg-text {
+  display: inline-block;
+  background: #e0e7ff;
+  color: #222;
+  padding: 8px 14px;
+  border-radius: 16px;
+  margin: 4px 0;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.screenshot {
+  display: block;
+  max-width: 320px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  background: #6366f1;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #4f46e5;
+}
