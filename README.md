@@ -78,7 +78,7 @@ Below are sample screenshots from the browser automation flow (see the `screensh
 
 | Gmail Login | Compose | Fields Filled | Sent Confirmation |
 |-------------|---------|--------------|------------------|
-| ![Login](selenium_backend/screenshots/sample_login.png) | ![Compose](selenium_backend/screenshots/sample_compose.png) | ![Filled](selenium_backend/screenshots/sample_filled.png) | ![Sent] |
+| ![Login](selenium_backend/screenshots/sample_login.png) | ![Compose](selenium_backend/screenshots/sample_compose.png) | ![Filled](selenium_backend/screenshots/sample_filled.png) |
 
 
 ---
